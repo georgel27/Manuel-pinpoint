@@ -98,7 +98,7 @@ public class auto_sample_SIMPLU extends LinearOpMode {
                             arms.updateBratIntakePosition(GLOBALS.brat_intake_positions.Intake);
                         })
 
-                        .strafeToLinearHeading(new Vector2d( 20.3, 28), Math.toRadians( 0 ) )
+                        .strafeToLinearHeading(new Vector2d( 23.7, 28), Math.toRadians( 0 ) )
 
 
                         .afterTime( 0, ( ) -> {
@@ -160,7 +160,7 @@ public class auto_sample_SIMPLU extends LinearOpMode {
                             arms.updateBratIntakePosition(GLOBALS.brat_intake_positions.Intake);
                         })
 
-                        .strafeToLinearHeading(new Vector2d(19, 18), Math.toRadians(0))
+                        .strafeToLinearHeading(new Vector2d(22.8, 22), Math.toRadians(0))
 
 
                         .afterTime( 0, ( ) -> {
@@ -226,7 +226,7 @@ public class auto_sample_SIMPLU extends LinearOpMode {
                             arms.updateBratIntakePosition(GLOBALS.brat_intake_positions.Intake);
                         })
 
-                        .strafeToLinearHeading(new Vector2d(35.5, 24), Math.toRadians(90))
+                        .strafeToLinearHeading(new Vector2d(36, 25), Math.toRadians(90))
 
                         .afterTime( 0, ( ) -> {
                             arms.updateBratIntakePosition(GLOBALS.brat_intake_positions.Colectare);
