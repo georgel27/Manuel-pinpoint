@@ -85,7 +85,7 @@ public class preload extends LinearOpMode {
                             }).start();
                         })
 
-                        .strafeToLinearHeading(new Vector2d(-10, 40), Math.toRadians(-90))
+                        .strafeToLinearHeading(new Vector2d(-16, 40), Math.toRadians(-90))
 
 
                         .build());
@@ -116,12 +116,12 @@ public class preload extends LinearOpMode {
 
                             }).start();
                         })
-                        .strafeToLinearHeading(new Vector2d(22, 22), Math.toRadians(45))
+                        .strafeToLinearHeading(new Vector2d(26, 25), Math.toRadians(51))
 
 
                         .build());
 
-
+///
         Actions.runBlocking(
                 drive.actionBuilder(new Pose2d(new Vector2d(drive.pose.position.x, drive.pose.position.y), drive.pose.heading.toDouble()))
 
@@ -247,12 +247,12 @@ public class preload extends LinearOpMode {
 
                         }).start();
                         })
-                        //.strafeToLinearHeading(new Vector2d(30, 15) ,Math.toRadians(-90))
+                        .strafeToLinearHeading(new Vector2d(35, 6) ,Math.toRadians(-90))
 
                         .afterTime(1,()->{
                             arms.updateGripperScorePosition(GLOBALS.grippers_positions.Inchis);
                         })
-                        .strafeToLinearHeading(new Vector2d(30, 1), Math.toRadians(-90))
+                        .strafeToLinearHeading(new Vector2d(33, 1), Math.toRadians(-90))
 
                         .build());
 
@@ -297,7 +297,7 @@ public class preload extends LinearOpMode {
                         //.strafeToConstantHeading(new Vector2d(30, 15) )
 
 
-                        .strafeToLinearHeading(new Vector2d(30, 1), Math.toRadians(-90))
+                        .strafeToLinearHeading(new Vector2d(33, 1), Math.toRadians(-90))
                         .afterTime(0,()->{
                             arms.updateGripperScorePosition(GLOBALS.grippers_positions.Inchis);
                         })
@@ -345,7 +345,7 @@ public class preload extends LinearOpMode {
 
                         //.strafeToConstantHeading(new Vector2d(30, 15) )
 
-                        .strafeToLinearHeading(new Vector2d(30, 1), Math.toRadians(-90))
+                        .strafeToLinearHeading(new Vector2d(33, 1), Math.toRadians(-90))
                         .afterTime(0,()->{
                             arms.updateGripperScorePosition(GLOBALS.grippers_positions.Inchis);
                         })
@@ -366,7 +366,7 @@ public class preload extends LinearOpMode {
 
                         }).start();})
 
-                        .strafeToConstantHeading(new Vector2d(-10, 40) )
+                        .strafeToConstantHeading(new Vector2d(-10, 44) )
 
 
 
@@ -393,7 +393,7 @@ public class preload extends LinearOpMode {
 
                         //.strafeToConstantHeading(new Vector2d(30, 15) )
 
-                        .strafeToLinearHeading(new Vector2d(30, 1), Math.toRadians(-90))
+                        .strafeToLinearHeading(new Vector2d(33, 1), Math.toRadians(-90))
                         .afterTime(0,()->{
                             arms.updateGripperScorePosition(GLOBALS.grippers_positions.Inchis);
                         })
@@ -415,7 +415,7 @@ public class preload extends LinearOpMode {
 
                         }).start();})
 
-                        .strafeToConstantHeading(new Vector2d(-12, 40) )
+                        .strafeToConstantHeading(new Vector2d(-10, 40) )
 
 
 
@@ -425,50 +425,50 @@ public class preload extends LinearOpMode {
 
         //specimen 5
 
-        Actions.runBlocking(
-                drive.actionBuilder(new Pose2d(new Vector2d (drive.pose.position.x,drive.pose.position.y),drive.pose.heading.toDouble()))
-
-                        .afterTime(0.6, ()->{
-                            lift.updateLiftPosition(GLOBALS.LiftPositions.Jos);
-                            extendo.updateExtendoPosition(GLOBALS.ExtendoPositions.Init);
-                            arms.updateBratIntakePosition(GLOBALS.brat_intake_positions.Init);
-                            arms.updateGripperIntakePosition(GLOBALS.grippers_positions.Deschis);
-                            arms.updateGripperScorePosition(GLOBALS.grippers_positions.Deschis);
-                            arms.updatePivotPosition(GLOBALS.pivot_positions.Safe);
-                            arms.updateBratScorePosition(GLOBALS.brat_score_positions.Specimen);
-
-
-                        })
-
-                        //.strafeToConstantHeading(new Vector2d(30, 15) )
-
-                        .strafeToLinearHeading(new Vector2d(30, 3), Math.toRadians(-90))
-                        .afterTime(0,()->{
-                            arms.updateGripperScorePosition(GLOBALS.grippers_positions.Inchis);
-                        })
-
-                        .build());
-
-        Actions.runBlocking(
-                drive.actionBuilder(new Pose2d(new Vector2d (drive.pose.position.x,drive.pose.position.y),drive.pose.heading.toDouble()))
-                        .afterTime(0, () -> {
-
-                            lift.updateLiftPosition(GLOBALS.LiftPositions.Specimen);
-                            arms.updateBratScorePosition(GLOBALS.brat_score_positions.SpecimenScorare);
-                            arms.updatePivotPosition(GLOBALS.pivot_positions.SpecimenScorare);
-                        })
-                        .afterTime(1.5, ()->{ new Thread(()-> {
-                            arms.pivot.setPosition(0.45);
-
-
-                        }).start();})
-
-                        .strafeToConstantHeading(new Vector2d(-13, 40) )
-
-
-
-
-                        .build());
+//        Actions.runBlocking(
+//                drive.actionBuilder(new Pose2d(new Vector2d (drive.pose.position.x,drive.pose.position.y),drive.pose.heading.toDouble()))
+//
+//                        .afterTime(0.6, ()->{
+//                            lift.updateLiftPosition(GLOBALS.LiftPositions.Jos);
+//                            extendo.updateExtendoPosition(GLOBALS.ExtendoPositions.Init);
+//                            arms.updateBratIntakePosition(GLOBALS.brat_intake_positions.Init);
+//                            arms.updateGripperIntakePosition(GLOBALS.grippers_positions.Deschis);
+//                            arms.updateGripperScorePosition(GLOBALS.grippers_positions.Deschis);
+//                            arms.updatePivotPosition(GLOBALS.pivot_positions.Safe);
+//                            arms.updateBratScorePosition(GLOBALS.brat_score_positions.Specimen);
+//
+//
+//                        })
+//
+//                        //.strafeToConstantHeading(new Vector2d(30, 15) )
+//
+//                        .strafeToLinearHeading(new Vector2d(30, 3), Math.toRadians(-90))
+//                        .afterTime(0,()->{
+//                            arms.updateGripperScorePosition(GLOBALS.grippers_positions.Inchis);
+//                        })
+//
+//                        .build());
+//
+//        Actions.runBlocking(
+//                drive.actionBuilder(new Pose2d(new Vector2d (drive.pose.position.x,drive.pose.position.y),drive.pose.heading.toDouble()))
+//                        .afterTime(0, () -> {
+//
+//                            lift.updateLiftPosition(GLOBALS.LiftPositions.Specimen);
+//                            arms.updateBratScorePosition(GLOBALS.brat_score_positions.SpecimenScorare);
+//                            arms.updatePivotPosition(GLOBALS.pivot_positions.SpecimenScorare);
+//                        })
+//                        .afterTime(1.5, ()->{ new Thread(()-> {
+//                            arms.pivot.setPosition(0.45);
+//
+//
+//                        }).start();})
+//
+//                        .strafeToConstantHeading(new Vector2d(-13, 40) )
+//
+//
+//
+//
+//                        .build());
 
         Actions.runBlocking(
                 drive.actionBuilder(new Pose2d(new Vector2d (drive.pose.position.x,drive.pose.position.y),drive.pose.heading.toDouble()))

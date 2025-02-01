@@ -77,13 +77,14 @@ public class auto_sample_SIMPLU extends LinearOpMode {
                             arms.updateBratScorePosition(GLOBALS.brat_score_positions.Score);
                         })
 
-                        .strafeToConstantHeading(new Vector2d(18, 34.1))
-                        .strafeToConstantHeading(new Vector2d(14, 34.1))
+                        .strafeToConstantHeading(new Vector2d(15, 35.5))
+                        .strafeToConstantHeading(new Vector2d(13, 37.5))
 
                         //.strafeToLinearHeading(new Vector2d( 8.5, 24), Math.toRadians( -45 ) )
 
 
                         .afterTime( 0, ( ) -> {
+                            sleep(500);
                             arms.updateGripperScorePosition( GLOBALS.grippers_positions.Deschis );
                         })
 
@@ -160,7 +161,7 @@ public class auto_sample_SIMPLU extends LinearOpMode {
                             arms.updateBratIntakePosition(GLOBALS.brat_intake_positions.Intake);
                         })
 
-                        .strafeToLinearHeading(new Vector2d(22.8, 22), Math.toRadians(0))
+                        .strafeToLinearHeading(new Vector2d(21.8, 19), Math.toRadians(0))
 
 
                         .afterTime( 0, ( ) -> {
@@ -297,18 +298,17 @@ public class auto_sample_SIMPLU extends LinearOpMode {
                     })
 
                     .strafeToLinearHeading(new Vector2d(55, 15), Math.toRadians(90), velPuternic, accelPuternic)
-                    .strafeToLinearHeading(new Vector2d(55, -8.5), Math.toRadians(90), velPuternic, accelPuternic)
+                    .strafeToLinearHeading(new Vector2d(55, -5), Math.toRadians(90), velPuternic, accelPuternic)
                     .build());
 
 
 
 
         arms.updateBratScorePosition(GLOBALS.brat_score_positions.Score);
-
+        sleep(1500);
+        stop();
 
         telemetry.addData("timp", timp.time());
         telemetry.update();
-        sleep(200000);
-
     }
 }
