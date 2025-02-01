@@ -21,15 +21,7 @@ import org.firstinspires.ftc.teamcode.TankDrive;
 @Config
 @TeleOp(name="localizer")
 public class LocalizationTest extends LinearOpMode {
-    public static int slidez=0;
-    public static double extendz=0.75;
-    public static double scoring_left_arm=0.2;
-    public static double scoring_right_arm=0.1;
-    public static double colecting_arms=0.62;
-    public static double gripz=0.8;
-    public static double transfer_gripz=0.62;
-    public static double gripz_rotation=0.74;
-    public static double gripz_angle=0.93;
+
     @Override
     public void runOpMode() throws InterruptedException {
         telemetry = new MultipleTelemetry(telemetry, FtcDashboard.getInstance().getTelemetry());
@@ -39,7 +31,7 @@ public class LocalizationTest extends LinearOpMode {
         boolean blockage=false;
         ElapsedTime timer =new ElapsedTime(0);
         boolean extend=false;
-        PinpointDrive drive = new PinpointDrive(hardwareMap, new Pose2d(new Vector2d(7.2,-62), Math.toRadians(-90)));
+        PinpointDrive drive = new PinpointDrive(hardwareMap, new Pose2d(new Vector2d(0,0), Math.toRadians(0)));
 
         waitForStart();
 

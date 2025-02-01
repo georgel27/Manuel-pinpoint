@@ -81,9 +81,9 @@ public class GLOBALS {
 
 
     //Pozitii pentru specimen scorare, restul cu specimen sunt pentru colectare
-    public  static  final int lift_specimen_scorare = 1350;
-    public static final double brat_scorare_specimen_scorare = 0.6;
-    public static final double pivot_specimen_scorare = 0.75;
+    public  static  final int lift_specimen_scorare = 70;//50 avea
+    public static final double brat_scorare_specimen_scorare = 0.37 ;
+    public static final double pivot_specimen_scorare = 0.6;
 
     //parametrii senzori
     public static final double intake_distance = 0.01;
