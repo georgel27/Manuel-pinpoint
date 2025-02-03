@@ -17,7 +17,7 @@ public class GLOBALS {
         Extended, Retracted, Transfer, Init;
     }
     public static final double Init = 0.99;
-    public static final double Extended = 0.74;
+    public static final double Extended = 0.745;
     public static final double Retracted = 0.99;
     public static final double Transfer = 0.888;
 
@@ -68,7 +68,7 @@ public class GLOBALS {
 
 
     public static final double pivot_score = 0.55;
-    public static final double pivot_specimen = 0.52;
+    public static final double pivot_specimen = 0.54;
     public static final double pivot_transfer = 0.2;
     public  static  final double pivot_safe = 0.5;
 

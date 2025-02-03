@@ -252,7 +252,7 @@ public class preload extends LinearOpMode {
                         .afterTime(1,()->{
                             arms.updateGripperScorePosition(GLOBALS.grippers_positions.Inchis);
                         })
-                        .strafeToLinearHeading(new Vector2d(33, 1), Math.toRadians(-90))
+                        .strafeToLinearHeading(new Vector2d(31.5, 1), Math.toRadians(-90))
 
                         .build());
 
@@ -297,7 +297,7 @@ public class preload extends LinearOpMode {
                         //.strafeToConstantHeading(new Vector2d(30, 15) )
 
 
-                        .strafeToLinearHeading(new Vector2d(33, 1), Math.toRadians(-90))
+                        .strafeToLinearHeading(new Vector2d(31.5, 1), Math.toRadians(-90))
                         .afterTime(0,()->{
                             arms.updateGripperScorePosition(GLOBALS.grippers_positions.Inchis);
                         })
@@ -345,7 +345,7 @@ public class preload extends LinearOpMode {
 
                         //.strafeToConstantHeading(new Vector2d(30, 15) )
 
-                        .strafeToLinearHeading(new Vector2d(33, 1), Math.toRadians(-90))
+                        .strafeToLinearHeading(new Vector2d(31.5, 1), Math.toRadians(-90))
                         .afterTime(0,()->{
                             arms.updateGripperScorePosition(GLOBALS.grippers_positions.Inchis);
                         })
@@ -393,7 +393,7 @@ public class preload extends LinearOpMode {
 
                         //.strafeToConstantHeading(new Vector2d(30, 15) )
 
-                        .strafeToLinearHeading(new Vector2d(33, 1), Math.toRadians(-90))
+                        .strafeToLinearHeading(new Vector2d(31.5, 1), Math.toRadians(-90))
                         .afterTime(0,()->{
                             arms.updateGripperScorePosition(GLOBALS.grippers_positions.Inchis);
                         })
