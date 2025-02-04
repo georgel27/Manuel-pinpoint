@@ -5,7 +5,7 @@ public class GLOBALS {
 
     //Lift
     public enum LiftPositions{
-        Basket1, Basket2, Jos, Specimen;
+        Basket1, Basket2, Jos, Specimen,SpecimenTELEOP;
     }
 
     public static final int Basket1 = 565;
@@ -26,10 +26,10 @@ public class GLOBALS {
         Intake, Colectare, Transfer, Init;
     }
     public enum brat_score_positions{
-        Init, Transfer, Score, Specimen, Safe, SpecimenScorare;
+        Init, Transfer, Score, Specimen, Safe, SpecimenScorare,SpecimenScorareTELEOP;
     }
     public enum pivot_positions{
-        Score, Specimen, Transfer, Safe, SpecimenScorare;
+        Score, Specimen, Transfer, Safe, SpecimenScorare,SpecimenScorareTELEOP;
     }
     public enum rotire_gripper_positions{
         pe_lung, pe_lat, mai_asea;
@@ -84,6 +84,10 @@ public class GLOBALS {
     public  static  final int lift_specimen_scorare = 70;//50 avea
     public static final double brat_scorare_specimen_scorare = 0.37 ;
     public static final double pivot_specimen_scorare = 0.6;
+
+    public  static  final int lift_specimen_scorareTELEOP = 70;
+    public static final double brat_scorare_specimen_scorareTELEOP = 0.37 ;
+    public static final double pivot_specimen_scorareTELEOP = 0.6;
 
     //parametrii senzori
     public static final double intake_distance = 0.01;
